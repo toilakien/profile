@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const About = () => {
@@ -15,7 +16,7 @@ const About = () => {
         </button>
       </div>
       <div className="w-[50%]  h-full max-lg:w-[100%] max-lg:h-[50%] p-4">
-        <img
+        <Image
           className="border-2 object-cover w-full h-full"
           src="https://aptech.fpt.edu.vn/wp-content/uploads/2022/11/cong-viec-cu-the-can-lam-cua-mot-developer.jpg"
           alt=""
