@@ -1,27 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: #212529;
+}
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  scroll-behavior: smooth;
+}
+.home {
+  background-image: url("../assets/images/bg-root.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+}
+.fixedHeader {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 20px 30px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 7px 0 rgba(0, 0, 1, 0.3);
+  transition-duration: 1s;
+}
+.drawer {
+  position: fixed;
+  top: 0;
+  bottom: 75%;
+  background-color: #f8f9fa;
+  left: 0;
+  right: 0;
+  animation: fade 0.8s;
+  box-shadow: 0 4px 7px #999;
+}
+@keyframes fade {
+  from {
+    bottom: 100%;
+  }
+  to {
+    bottom: 75%;
+  }
 }
