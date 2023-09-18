@@ -6,7 +6,7 @@ import Service from "~/components/pages/Service";
 export default function App() {
   return (
     <main className="w-full flex min-h-screen flex-col items-center justify-between relative ">
-      <div id="home" className="w-full h-screen z-[100] home ">
+      <div id="home" className="w-full h-screen max-sm:h-[665px] z-[100] home ">
         <Header />
         <Home />
       </div>

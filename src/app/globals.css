@@ -36,6 +36,17 @@ body {
   animation: fade 0.8s;
   box-shadow: 0 4px 7px #999;
 }
+.text-animation {
+  animation: identifier 2s linear infinite alternate;
+}
+@keyframes identifier {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(1.05);
+  }
+}
 @keyframes fade {
   from {
     bottom: 100%;
